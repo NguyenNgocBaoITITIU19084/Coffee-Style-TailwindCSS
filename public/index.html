@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" type="text/css" rel="stylesheet">
+  <script src="./main.js" type="text/javascript" async></script>
   <title>Coffee Style</title>
 </head>
 <body>
   <div id="root">
     <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-600">
-      <header class="flex flex-row justify-between items-center py-6 mx-10">
+      <header class="flex flex-row justify-end lg:justify-between items-center py-6 mx-auto relative">
         <div class="logo text-center basis-2/6">
           <span class="cursor-pointer text-xl font-semibold">CoffeeStyle.</span>
         </div>
-        <ul class="flex flex-row basis-3/6 justify-between items-center uppercase text-sm text-gray-500 font-medium">
+        <ul id="ct-top-menu-items" class="hidden lg:flex lg:flex-row lg:basis-3/6 lg:justify-between lg:items-center uppercase text-sm text-gray-500 font-medium">
           <li href="#" class="ct-top-menu-item">Home</li>
           <li href="#" class="ct-top-menu-item">products</li>
           <li href="#" class="ct-top-menu-item">Blog</li>
@@ -22,7 +23,7 @@
           <li href="#" class="ct-top-menu-item">Style Guide</li>
           <li href="#" class="ct-top-menu-item">Bao Nguyen</li>
         </ul>
-        <div class="cart basis-1/6 flex flex-row justify-center items-center text-sm text-gray-500 font-medium uppercase">
+        <div class="cart basis-3/6 lg:basis-1/6 flex flex-row justify-end lg:justify-center items-center text-sm text-gray-500 font-medium uppercase">
          <a href="#" class="ct-top-menu-item flex flex-row justify-between items-center">
           <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ct-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
@@ -31,6 +32,11 @@
             <span class="mx-3">Cart</span>
             <span class="ct-badge-circle bg-orange-500 text-white">10</span>
          </a>
+        </div>
+        <div id="ct-toggle-top-menu-icon" class="menu-icon basis-1/6 lg:hidden flex flex-row items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>          
         </div>
       </header> <!-- End Header Here -->
       <main class="">
