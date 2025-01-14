@@ -18,3 +18,15 @@
 .ct-badge-circle {
   @apply text-xs text-center rounded-full px-1.5;
 }
+
+.ct-sub-headline {
+  @apply flex flex-row justify-center items-center mb-24;
+}
+
+.ct-sub-headline-content {
+  @apply mx-4 uppercase tracking-widest text-center text-[13px] font-medium text-gray-500;
+}
+
+.ct-sub-headline-decor-line {
+  @apply bg-gray-200 h-[1px] w-8;
+}
