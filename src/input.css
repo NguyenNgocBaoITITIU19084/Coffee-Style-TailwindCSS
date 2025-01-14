@@ -28,5 +28,5 @@
 }
 
 .ct-sub-headline-decor-line {
-  @apply bg-gray-200 h-[1px] w-8;
+  @apply bg-coffee-600 h-[1px] w-8;
 }
